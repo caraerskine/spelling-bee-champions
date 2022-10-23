@@ -1,0 +1,187 @@
+
+{
+    "champions": [
+  
+        {
+          "id": 1,
+          "name": "Tyler Kuykendall",
+          "image": "https://i.postimg.cc/wTQKmpyt/14-succedaneum.jpg",
+          "year": 1978,
+          "location" : "Bristol, Pennsylvania",
+          "word" : "gladiolus"
+        },
+    
+       {
+          "id": 2,
+          "name": "Paige O`Dorney",
+         "image": "https://i.postimg.cc/qvvF6CHY/scripps3.jpg",
+          "year": 1922,
+          "location": "West Linn, Oregon",
+          "word": "staphylococci"
+        },
+  
+        {
+          "id": 3,
+          "name": "Pratyush Shankar",
+          "image" : "https://i.postimg.cc/L8xrx3V2/360-F-534513685-WLod-F99-Pd-Ncf-NCK9l-LOGv-BVz-Rvoie-GUM.jpg",
+          "year" : 1989,
+         "location" : "Anaheim, California",
+          "word" : "chiaroscurist"
+        },
+  
+        {
+          "id": 4,
+          "name": "Ananya Roy",
+          "image" : "https://i.postimg.cc/B6H7fT28/Visuals-Stock-AK40859.jpg",
+          "year" : 1998,
+          "location" : "Littleton, Colorado",
+          "word": "appogiatura"
+        },
+  
+        {
+          "id": 5,
+          "name": "Rishik Yochum",
+          "image": "https://i.postimg.cc/g051Wc57/640-01575081en-Masterfile.jpg",
+          "year": 1969,
+          "location": "Avondale, Pennsylvania",
+          "word": "scherenshnitte"
+        },
+  
+        {
+          "id": 6,
+          "name": "Scott Dimak",
+          "image": "https://i.postimg.cc/yNW2t3f9/20151003-060058-trophy.webp",
+         "year": "1955",
+         "location": "Green Harbor, Massachusetts",
+          "word": "cambist"
+        },
+         
+        {
+          "id": 7,
+          "name": "Chirag Nandipati",
+          "image": "https://i.postimg.cc/MH0LV7Tk/gettyimages-71036792-612x612.jpg",
+          "year": 2012,
+          "location": "Tolland, Connecticut",
+          "word": "esquamulose"
+        },
+
+
+        {
+          "id": 8,
+          "name": "Geoff Sachko",
+          "image": "https://i.postimg.cc/nck5LGgB/gettyimages-157193018-612x612.jpg",
+          "year": 2019,
+          "location": "Troy, Michigan",
+          "word": "smaragdine"
+        },
+       
+        {
+          "id": 9,
+          "name": "Joanie Isaacs",
+          "image": "https://i.postimg.cc/HkvhwspL/Trophy-630x420.jpg",
+          "year": 1983,
+         "location": "Snyder, New York",
+          "word": "meticulosity"
+        },
+        
+        {
+          "id": 10,
+          "name": "Jolitta Feldman",
+          "image": "https://i.postimg.cc/BQ09b669/58cdf530a6e18-image.jpg", 
+          "year": 2001,
+          "location": "Puyallup, Washington",
+          "word": "kniadel"
+        },
+  
+       {
+          "id": 11,
+          "name": "Dorothy Greenwald",
+          "image": "https://i.postimg.cc/BbWWxZBF/5cf14a3411e2052e421801e4.webp",
+          "year": 1932,
+          "location": "Des Moines, Iowa",
+          "word": "invulnerable"
+        },
+    
+       {
+          "id": 12,
+          "name": "Kim Calvin",
+          "image": "https://i.postimg.cc/QMRYz4KG/zaila-avante-garde-652.jpg",
+          "year": 1949,
+          "location": "Canton, Ohio",
+          "word": "onerous"
+        },
+  
+        {
+          "id": 13,
+          "name": "Joel Montgomery",
+          "image": "https://i.postimg.cc/3wybn5RF/watchf-associated-press-domestic-news-washington-united-states-aphs-62nd-national-spelling-bee-scott.jpg",
+          "year": 1959,
+          "location": "Denver, Colorado",
+          "word": "catamaran"
+        },
+  
+        {
+          "id": 14,
+          "name": "Jennifer Reinke",
+          "image": "https://i.postimg.cc/zBg6XZYG/finish-line-winner.jpg",
+          "year": 1967,
+          "location": "Omaha, Nebraska",
+          "word": "chihuahua"
+        },
+  
+        {
+          "id": 15,
+          "name": "Daniel Greenblatt",
+          "image" : "https://i.postimg.cc/Mp6C0FV9/360-F-196982177-U3-FAm-Ms0q-DNa-HDgw0d5w-QGUq-NM79d-E4x.jpg",
+          "year": 1984,
+         "location": "Leesburg, Virginia",
+          "word": "luge"
+        },
+  
+        {
+          "id": 16,
+          "name": "Ragee Ramachandran",
+          "image": "https://i.postimg.cc/VvXx4yKV/5cf170ad11e20502d254a5e5.webp",
+          "year": 1988,
+         "location": "Sacramento, California",
+          "word": "elegiacal"
+        },
+  
+        {
+          "id": 17,
+          "name": "Wendy Guey",
+          "image": "https://i.postimg.cc/XNF6nFnk/360-F-144401994-q-QO8-V7pjiifv-Lggia-Pj-SSV6z3-Ai76q1n.jpg",
+          "year": 1996,
+          "location": "West Palm Beach, Florida",
+          "word": "vivisepulture"
+        },
+        
+        {
+          "id": 18,
+          "name": "Sai Gunturi",
+          "image": "https://i.postimg.cc/Y2QZ5HxX/ca-times-brightspotcdn.jpg",
+          "year": 2003,
+         "location": "Dallas, Texas",
+          "word" : "pococurante"
+        },
+        
+        {
+          "id": 19,
+          "name": "Anamika Veeramani",
+          "image": "https://i.postimg.cc/BbfyjYJc/4225e334959ed13a91de1fca9efbed09.webp", 
+          "year": 2010,
+          "location": "Cleveland, Ohio",
+          "word": "stromuhr"
+        },
+  
+        {
+          "id": 20,
+          "name": "Henry Feldman",
+          "image": "https://i.postimg.cc/5N1T1R7f/gettyimages-82137382-612x612.jpg",
+          "year": 1960,
+          "location": "Knoxville, Tennessee",
+          "word": "eudaemonic"
+        }
+    ]
+  }
+  
