@@ -1,3 +1,12 @@
+
+BEESPN is an app that displays some of the Scripps Spelling Bee winners over the past 100 years. 
+I love spelling and I love sports so I thought "BEESPN" was pretty funny! 
+
+Goals:
+-Display data of spelling bee constestants (GET)
+-Allow users to click the contestant photo to display more information
+-Allow users to enter in other spelling bee winners via a submittable form (POST)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
