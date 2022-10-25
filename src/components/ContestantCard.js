@@ -9,9 +9,9 @@ function ContestantCard( {champion} ) {
                  <ul className="column">
                  <h2>{champion.name}</h2>
                     <img src={champion.image} alt={"description"} />
-                    <li>{champion.year}</li>
-                    <li>{champion.location}</li>
-                    <li><strong>{champion.word}</strong></li>
+                    <li>Championship: {champion.year}</li>
+                    <li>Hometown: {champion.location}</li>
+                    <li>Winning word: <strong>{champion.word}</strong></li>
                      <p></p>
                      <p></p>                   
                  </ul>

@@ -3,6 +3,7 @@ import ContestantCard from "./ContestantCard";
 
 
 function ContestantContainer( {champions} ) {
+  console.log(champions)
 
 
 const renderContestants = champions.map((champion) => (
