@@ -11,7 +11,7 @@ function ContestantCard( {champion} ) {
                 <h2>{champion.name}</h2>
                 <p>{champion.year}</p>
                 <p>{champion.location}</p>
-                <p>{champion.word}</p>
+                <strong>{champion.word}</strong>
              </div>
         </li>
 

@@ -1,26 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ContestantCard from "./ContestantCard";
-// import NewContestantForm from "./NewContestantForm";
 
 function ContestantContainer( {champions} ) {
 
-const [contestants, setContestants] = useState ([]);
-
-useEffect(() => {
-  fetch("http://localhost:3004/champions")
-    .then((r) => r.json())
-    .then(data => setContestants(data));
-}, []);
-
 const renderContestants = champions.map((champion) => (
-<ContestantCard key={champion.id} champion={champion} />
+<ContestantCard key={champion.id} champion={champion}/>
 ));
 
   return (
     <main>
       <ul className="cards">
         {renderContestants}
-        {/* {/* <NewContestantForm /> */}
       </ul>
     </main>
   );
@@ -34,3 +24,4 @@ export default ContestantContainer;
 //then set state to display data 
 
 //You might want search input in listings container aka gregslist
+//new contestant form component should be in CC
