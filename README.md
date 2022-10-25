@@ -1,12 +1,13 @@
 
 Description of App
 
-    BEESPN is an app that displays some data of the Scripps Spelling Bee winners over the past 100 years. I love spelling and I love sports so I thought "BEESPN" was pretty funny, it is a play on the sports website "ESPN" and I just added a bee icon in front of it. Welcome to the wide world of spelling! 
+    BEESPN is an app that displays a collection of the Scripps Spelling Bee winners over the past 100 years. I love spelling and I love sports so I thought "BEESPN" was pretty funny. It is a play on the sports website "ESPN" and I added a bee icon in front of it to denote a spelling bee. Welcome to the wide world of spelling! We are the champions! 
 
 Goals:
-    Display data of spelling bee constestants (GET request)
-    Allow users to click the contestant photo to display more information (click event)
-    Allow users to enter in other spelling bee winners via a submittable form (POST request)
+    -Display data of spelling bee constestants (GET request)
+    -Allow users to click the contestant photo to display more information (click event)
+    -Allow users to enter in other spelling bee winners via a submittable form (POST request)
+    -Use routes
 
 URL of repo
 https://github.com/caraerskine/spelling-bee-champions
