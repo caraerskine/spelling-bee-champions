@@ -32,6 +32,13 @@ function NavBar() {
             activeStyle={{ background: "black", }}>
             Words and definitions
          </NavLink>
+         <NavLink 
+            to="/wordsanddefinitions"
+            exact
+            style={linkStyles}
+            activeStyle={{ background: "black", }}>
+            Untitled
+         </NavLink>
       </div>
     </header>
   );
