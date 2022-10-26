@@ -1,9 +1,9 @@
 import React from "react";
 import ContestantCard from "./ContestantCard";
-// import NewContestant from "./NewContestant";
+// import NewContestantForm from "./NewContestantForm";
 
 
-function ContestantContainer( {champions} ) {
+function ContestantPage( {champions} ) {
   console.log(champions)
 
 
@@ -21,7 +21,7 @@ const renderContestants = champions.map((champion) => (
   );
 }
 
-export default ContestantContainer;
+export default ContestantPage;
 
 //Add <NewContestant /> component in here I think 
 
