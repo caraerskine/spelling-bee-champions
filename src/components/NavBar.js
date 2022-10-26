@@ -15,9 +15,6 @@ function NavBar() {
   return (
     <header>
       <div>
-      <div>
-         <h1>Welcome to BEESPN: Scripps Spelling Bee Champions from the past 100 years</h1><img src="https://i.postimg.cc/C1fyLNkp/bee-banner.png" alt="My BEESPN logo"/>
-      </div>
          <NavLink 
             to="/newcontestantform"
             exact
@@ -47,5 +44,3 @@ function NavBar() {
 
 export default NavBar;
 
-//exampls from PLantsy
-//<span className="logo">🌱</span>

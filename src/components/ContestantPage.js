@@ -1,5 +1,6 @@
 import React from "react";
 import ContestantCard from "./ContestantCard";
+import NewContestantForm from "./NewContestantForm";
 // import NewContestantForm from "./NewContestantForm";
 
 
@@ -14,6 +15,7 @@ const renderContestants = champions.map((champion) => (
 
   return (
     <main>
+      <NewContestantForm />
       <ul className="cards">
        {renderContestants}
       </ul>

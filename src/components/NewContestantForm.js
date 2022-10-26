@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-function NewContestantForm( ) {
+function NewContestantForm() {
 
   const [newContestant, setNewContestant] = useState({
      name: "",
@@ -21,14 +21,22 @@ function handleChange(e) {
   })
 }
 
-
-} 
-
-    
+function handleSubmit(e) {
+ e.preventDefault();
+ fetch("http://localhost:3004/champions", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(newContestant)
+    }) .then(r => r.json())
+       .then (data => console.log(data))
+}
+ 
     return (
       <div className="new-contestant-form">
         <h2>Add a new Champion!</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
           <input 
           type="text" 
           name="name" 
@@ -68,7 +76,7 @@ function handleChange(e) {
         </form>
       </div>
     );
-  
+  }
 
 
 

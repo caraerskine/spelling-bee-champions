@@ -2,7 +2,8 @@ import React, {useState, useEffect} from "react";
 import { Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar";
 import ContestantPage from "./ContestantPage";
-// import NewContestantForm from "./NewContestantForm";
+import Header from "./Header";
+import NewContestantForm from "./NewContestantForm";
 // import Dictionary from "./Dictionary";
 
 function App() {
@@ -19,14 +20,16 @@ useEffect(() => {
 
   return (
     <div className="App">
+      <Header /> 
+
       <NavBar />
         <Switch >
            <Route path="/"> 
              <ContestantPage champions={champions} />
            </Route>   
-           {/* <Route path="/"> 
-             <NewContestantForm setNewContestants={setNewContestants} />
-           </Route>    */}
+           <Route path="/"> 
+             <NewContestantForm  />
+           </Route>   
        {/* <Route path="/"> 
              <Dictionary />
            </Route>    */}
@@ -37,3 +40,6 @@ useEffect(() => {
 
 export default App;
 
+
+//add to NCF component
+//setNewContestants={setNewContestants}
