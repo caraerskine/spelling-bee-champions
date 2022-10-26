@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 
+//reset form below
+const baseValue = {
+  name: "",
+  image: "",
+  year: "",
+  location: "",
+  word: "",
+}
 
-function NewContestantForm() {
-
-  const [newContestant, setNewContestant] = useState({
-     name: "",
-     image: "",
-     year: 0,
-     location: "",
-     word: "",
-  });
+function NewContestantForm( {setChampions}) {
+  const [newContestant, setNewContestant] = useState(baseValue);
 
 function handleChange(e) {
   setNewContestant((currentNewContestant) => {
@@ -21,18 +22,26 @@ function handleChange(e) {
   })
 }
 
-function handleSubmit(e) {
- e.preventDefault();
- fetch("http://localhost:3004/champions", {
+
+   function handleSubmit(e) {
+    e.preventDefault();
+    fetch("http://localhost:3004/champions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
     body: JSON.stringify(newContestant)
     }) .then(r => r.json())
-       .then (data => console.log(data))
+       .then (data => handleAddNewContestant(data));
 }
  
+
+   function handleAddNewContestant(data) {
+     setNewContestant(baseValue) //reset form
+     setChampions((currentContestants) => [...currentContestants, data])      //add to array but don't change array 
+}
+
+
     return (
       <div className="new-contestant-form">
         <h2>Add a new Champion!</h2>
@@ -52,8 +61,8 @@ function handleSubmit(e) {
           onChange={handleChange}
           />
           <input 
-          type="number" 
-          name="year" 
+          type="text" 
+          name="year"   //help here w number 
           value={newContestant.year} 
           placeholder="Year" 
           onChange={handleChange}

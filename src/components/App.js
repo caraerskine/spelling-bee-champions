@@ -28,7 +28,7 @@ useEffect(() => {
              <ContestantPage champions={champions} />
            </Route>   
            <Route path="/"> 
-             <NewContestantForm  />
+             <NewContestantForm setChampions={setChampions} />
            </Route>   
        {/* <Route path="/"> 
              <Dictionary />
