@@ -1,5 +1,6 @@
 import React from "react";
 import ContestantCard from "./ContestantCard";
+// import NewContestant from "./NewContestant";
 
 
 function ContestantContainer( {champions} ) {
@@ -22,6 +23,7 @@ const renderContestants = champions.map((champion) => (
 
 export default ContestantContainer;
 
+//Add <NewContestant /> component in here I think 
 
 //You might want search input in listings container aka gregslist
 //new contestant form component could be in CC
