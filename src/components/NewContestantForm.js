@@ -16,16 +16,14 @@ function handleChange(e) {
   setNewContestant((currentNewContestant) => {
     return {
        ...currentNewContestant,
-       [e.target.name]: e.target.value,
-
+       [e.target.name]: e.target.value
     }
   })
 }
 
-
    function handleSubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:3004/champions", {
+    fetch("/newcontestantform", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -90,3 +88,7 @@ function handleChange(e) {
 
 
 export default NewContestantForm;
+
+
+//"http://localhost:3004/champions"
+//if above fetch is weird replace it w this

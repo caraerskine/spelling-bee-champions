@@ -21,25 +21,20 @@ useEffect(() => {
   return (
     <div className="App">
       <Header /> 
-
-      <NavBar />
-        <Switch >
-           <Route path="/"> 
-             <ContestantPage champions={champions} />
-           </Route>   
-           <Route path="/"> 
-             <NewContestantForm setChampions={setChampions} />
-           </Route>   
-       {/* <Route path="/"> 
-             <Dictionary />
-           </Route>    */}
-        </Switch>
+        <NavBar />
+          <Switch >
+             <Route path="/"> 
+               <ContestantPage champions={champions} />
+             </Route>   
+             <Route path="/"> 
+               <NewContestantForm setChampions={setChampions} />
+            </Route>   
+        {/* <Route path="/"> 
+               <Dictionary />
+             </Route>    */}
+         </Switch>
     </div>
   );
 }
 
 export default App;
-
-
-//add to NCF component
-//setNewContestants={setNewContestants}
