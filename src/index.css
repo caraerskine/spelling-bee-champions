@@ -17,6 +17,30 @@ body {
   }
 }
 
+/* //trying CSS for contestant form below idk */
+
+.new-contestant-form {
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  background-color: rgba(181, 250, 181, 0.5);
+}
+
+.new-contestant-form form {
+  display: flex;
+  justify-content: center;
+}
+
+.new-contestant-form input {
+  margin-right: 2rem;
+  flex: 1;
+}
+
+.new-contestant-form button {
+  width: 150px;
+}
+
+
+
 
   
 
