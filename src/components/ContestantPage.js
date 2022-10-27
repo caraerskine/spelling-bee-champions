@@ -2,7 +2,7 @@ import React from "react";
 import ContestantCard from "./ContestantCard";
 
 
-function ContestantPage( {champions, setChampions} ) {
+function ContestantPage( {champions} ) {
   console.log(champions)
 
   const renderContestants = champions.map((champion) => (

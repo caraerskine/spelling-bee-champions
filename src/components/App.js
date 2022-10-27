@@ -7,11 +7,11 @@ import NewContestantForm from "./NewContestantForm";
 import Dictionary from "./Dictionary";
 import Home from "./Home";
 
+
 function App() {
 
   const [champions, setChampions] = useState ([]);
 
-  
 useEffect(() => {
   fetch("http://localhost:3004/champions")
     .then((r) => r.json())
