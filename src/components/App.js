@@ -5,6 +5,7 @@ import ContestantPage from "./ContestantPage";
 import Header from "./Header";
 import NewContestantForm from "./NewContestantForm";
 import Dictionary from "./Dictionary";
+import Home from "./Home";
 
 function App() {
 
@@ -22,7 +23,10 @@ useEffect(() => {
       <Header /> 
         <NavBar />
           <Switch >
-             <Route exact path="/home"> 
+          <Route exact path="/"> 
+               <Home />
+             </Route> 
+             <Route exact path="/championspage"> 
                <ContestantPage champions={champions} />
              </Route>   
              <Route exact path="/newcontestantform"> 

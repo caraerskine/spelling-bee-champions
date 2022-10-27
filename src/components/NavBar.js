@@ -15,6 +15,13 @@ function NavBar() {
   return (
     <header>
       <div>
+      <NavLink 
+            to="/"
+            exact
+            style={linkStyles}
+            activeStyle={{ background: "black", }}>
+            Home Page
+         </NavLink>
          <NavLink 
             to="/newcontestantform"
             exact
@@ -30,7 +37,7 @@ function NavBar() {
             Winning words and definitions
          </NavLink>
          <NavLink 
-            to="/home"
+            to="/championspage"
             exact
             style={linkStyles}
             activeStyle={{ background: "black", }}>
