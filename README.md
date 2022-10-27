@@ -6,10 +6,19 @@ Description of App
  For any history nerds out there, I did mix and match some of the contestants' first and last names to make amalgamated contestants. I plucked the years, added my own hometowns based on all the places I lived as a kid, and just picked winning words I liked from all the winning words. Pictures are not of actual winners, so this is just a funny mash-up of winners, but it is based on actual Scripps Spelling bee data that I compiled in my own db.json file.
 
 Goals:
-    -Display data of spelling bee constestants (GET request)
+    GET request
+    -Display data of spelling bee constestants 
+
+    Click event/user interaction
     -Allow users to click the contestant's button to display more information (click event)
-    -Allow users to enter in other spelling bee winners via a submittable form (POST request)
-    -Use 3 or more routes to allow user to navigate to a specific URL 
+
+    POST request
+    -Allow users to enter in other spelling bee winners via a submittable form 
+
+    Client-side routing 
+    -Use 3 or more routes to allow user to navigate to a specific path in the URL
+
+    Components
     -Have at least 5 components
 
 URL of repo
