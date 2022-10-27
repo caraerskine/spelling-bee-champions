@@ -32,9 +32,9 @@ useEffect(() => {
              <Route exact path="/newcontestantform"> 
                <NewContestantForm setChampions={setChampions} />
             </Route>   
-             {/* <Route exact path="/wordsanddefinitions"> 
-               <Dictionary />
-             </Route>    */}
+             <Route exact path="/wordsanddefinitions"> 
+               <Dictionary champions={champions}/>
+             </Route>   
          </Switch>
     </div>
   );

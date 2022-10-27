@@ -20,8 +20,3 @@ function ContestantPage( {champions} ) {
 }
 
 export default ContestantPage;
-
-//Add <NewContestantForm /> component in here I think 
-
-//You might want search input in listings container aka gregslist
-//new contestant form component could be in CC

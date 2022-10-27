@@ -45,9 +45,3 @@ const showWord = (
    );
 }      
     export default ContestantCard;
-
-
-    //need handle click on winning word button 
-
-    // <li>Winning word: <strong>{champion.word}</strong></li>
-    // <li>Definition: <strong>{champion.definition}</strong></li>

@@ -23,6 +23,13 @@ function NavBar() {
             Home Page
          </NavLink>
          <NavLink 
+            to="/championspage"
+            exact
+            style={linkStyles}
+            activeStyle={{ background: "black", }}>
+            Champions Page
+         </NavLink>
+         <NavLink 
             to="/newcontestantform"
             exact
             style={linkStyles}
@@ -35,13 +42,6 @@ function NavBar() {
             style={linkStyles}
             activeStyle={{ background: "black", }}>
             All winning words and definitions
-         </NavLink>
-         <NavLink 
-            to="/championspage"
-            exact
-            style={linkStyles}
-            activeStyle={{ background: "black", }}>
-            Champions Page
          </NavLink>
       </div>
     </header>
