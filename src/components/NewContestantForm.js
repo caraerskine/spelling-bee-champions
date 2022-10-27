@@ -63,8 +63,11 @@ function handleChange(e) {
           onChange={handleChange}
           />
           <input 
-          type="text" 
-          name="year"   //help here w number 
+          type="number"
+          min="1900"
+          max="2099"
+          step="1" 
+          name="year"  
           value={newContestant.year} 
           placeholder="Year" 
           onChange={handleChange}
@@ -96,10 +99,5 @@ function handleChange(e) {
     );
   }
 
-
-
 export default NewContestantForm;
 
-
-//"http://localhost:3004/champions"
-//if above fetch is weird replace it w this
