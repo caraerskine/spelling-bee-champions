@@ -83,9 +83,9 @@ function handleChange(e) {
           placeholder="Winning word" 
           onChange={handleChange}
           />
-           <input 
+          <input 
           type="text" 
-          name="word" 
+          name="definition" 
           value={newContestant.definition} 
           placeholder="Definition of winning word" 
           onChange={handleChange}
