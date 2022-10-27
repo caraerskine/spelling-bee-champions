@@ -7,10 +7,13 @@ const baseValue = {
   year: "",
   location: "",
   word: "",
+  definition: ""
 }
 
 function NewContestantForm( {setChampions}) {
   const [newContestant, setNewContestant] = useState(baseValue);
+
+  console.log(newContestant)
 
 function handleChange(e) {
   setNewContestant((currentNewContestant) => {
