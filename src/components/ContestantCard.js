@@ -14,6 +14,7 @@ function ContestantCard( {champion} ) {
 const showWord = (
     <>
         <li>Winning word: <strong>{champion.word}</strong></li>  
+        <p></p>
     </>
 )
 
