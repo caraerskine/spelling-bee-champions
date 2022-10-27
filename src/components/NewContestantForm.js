@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-//reset form below
 const baseValue = {
   name: "",
   image: "",
@@ -39,8 +38,8 @@ function handleChange(e) {
  
 
    function handleAddNewContestant(data) {
-     setNewContestant(baseValue) //reset form
-     setChampions((currentContestants) => [...currentContestants, data])      //add to array but don't change array 
+     setNewContestant(baseValue) 
+     setChampions((currentContestants) => [...currentContestants, data])      
 }
 
 

@@ -13,10 +13,7 @@ function ContestantCard( {champion} ) {
 
 const showWord = (
     <>
-        <li>Winning word: <strong>{champion.word}</strong></li>
-        <p></p>
-        <li>Definition: <strong>{champion.definition}</strong></li>
-        <p></p>    
+        <li>Winning word: <strong>{champion.word}</strong></li>  
     </>
 )
 
