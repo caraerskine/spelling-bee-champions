@@ -6,14 +6,17 @@ function ContestantCard( {champion} ) {
 
     const [isOn, setIsOn] = useState(false)
 
-   function handleClick(e) {
-    console.log(handleClick)
+   
+   function handleClick() {
+    setIsOn(isOn => !isOn)
    }
 
 const showWord = (
     <>
         <li>Winning word: <strong>{champion.word}</strong></li>
+        <p></p>
         <li>Definition: <strong>{champion.definition}</strong></li>
+        <p></p>    
     </>
 )
 
@@ -27,22 +30,20 @@ const showWord = (
                             <li>Championship: {champion.year}</li>
                             <li>Hometown: {champion.location}</li>
                         </Card.Text>
-                      <Button onClick={() => handleClick} variant="primary">See {champion.name}'s winning word!</Button>
-                 <h3></h3>
-                   {!isOn ? (
-                       true
-                   ) : (
-                      showWord
-                   )}
-                 </Card.Body>
-             </Card>      
+                        <div>
+                         {!isOn ? (
+                            true
+                         ) : (
+                            showWord
+                        )}
+                          <Button onClick={handleClick} variant="primary">See {champion.name}'s winning word!</Button>
+                        </div>
+                    </Card.Body>
+             </Card>     
+              <h3></h3>   
     </div>
-    
-   
-
-      );
-    }
-
+   );
+}      
     export default ContestantCard;
 
 
