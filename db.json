@@ -179,6 +179,24 @@
       "location": "Knoxville, Tennessee",
       "word": "eudaemonic",
       "definition": "Conducive to happiness."
+    },
+    {
+      "name": "Michael",
+      "image": "https://www.yardbarker.com/media/d/9/d9e35e1fba3d317eb7a4c3bb926a029c79dcd2e9/thumb_16x9/michael-jordan-career-retrospective.jpg",
+      "year": "1989",
+      "location": "Chicago, IL",
+      "word": "y",
+      "definition": "",
+      "id": 21
+    },
+    {
+      "name": "",
+      "image": "",
+      "year": "",
+      "location": "",
+      "word": "",
+      "definition": "",
+      "id": 22
     }
   ]
 }

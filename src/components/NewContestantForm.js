@@ -17,6 +17,7 @@ function NewContestantForm( {setChampions}) {
 
 function handleChange(e) {
   setNewContestant((currentNewContestant) => {
+
     return {
        ...currentNewContestant,
        [e.target.name]: e.target.value
