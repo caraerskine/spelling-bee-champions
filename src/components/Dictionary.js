@@ -1,4 +1,11 @@
-// import React from "react";
+import React from "react";
+// import FlipCard from "./FlipCard";
+
+
+
+function Dictionary() { 
+
+}
 
 
 
@@ -6,8 +13,6 @@
 
 
 
+export default Dictionary;
 
-
-
-
-// export default Dictionary;
+//is words and defninitiosn

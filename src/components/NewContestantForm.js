@@ -79,6 +79,13 @@ function handleChange(e) {
           placeholder="Winning word" 
           onChange={handleChange}
           />
+           <input 
+          type="text" 
+          name="word" 
+          value={newContestant.definition} 
+          placeholder="Definition of winning word" 
+          onChange={handleChange}
+          />
           <button type="submit">Add New Champion</button>
         </form>
       </div>

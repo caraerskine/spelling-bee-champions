@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 
 const linkStyles = {
   display: "inline-block",
-  width: "90px",
+  width: "100px",
   padding: "12px",
-  margin: "0 6px 6px",
+  margin: "0 8px 8px",
   background: "black",
   textDecoration: "none",
   color: "white",
@@ -27,14 +27,14 @@ function NavBar() {
             exact
             style={linkStyles}
             activeStyle={{ background: "black", }}>
-            Words and definitions
+            Winning words and definitions
          </NavLink>
          <NavLink 
-            to="/untitled"
+            to="/home"
             exact
             style={linkStyles}
             activeStyle={{ background: "black", }}>
-            Untitled
+            Champions Page
          </NavLink>
       </div>
     </header>

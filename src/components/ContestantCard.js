@@ -12,6 +12,7 @@ function ContestantCard( {champion} ) {
                     <li>Championship: {champion.year}</li>
                     <li>Hometown: {champion.location}</li>
                     <li>Winning word: <strong>{champion.word}</strong></li>
+                    <li>Definition: <strong>{champion.definition}</strong></li>
                      <p></p>
                      <p></p>                   
                  </ul>

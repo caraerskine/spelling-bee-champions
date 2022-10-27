@@ -4,14 +4,13 @@ import NavBar from "./NavBar";
 import ContestantPage from "./ContestantPage";
 import Header from "./Header";
 import NewContestantForm from "./NewContestantForm";
-// import Dictionary from "./Dictionary";
+import Dictionary from "./Dictionary";
 
 function App() {
 
   const [champions, setChampions] = useState ([]);
+
   
-
-
 useEffect(() => {
   fetch("http://localhost:3004/champions")
     .then((r) => r.json())
@@ -23,15 +22,15 @@ useEffect(() => {
       <Header /> 
         <NavBar />
           <Switch >
-             <Route path="/"> 
+             <Route exact path="/home"> 
                <ContestantPage champions={champions} />
              </Route>   
-             <Route path="/"> 
+             <Route exact path="/newcontestantform"> 
                <NewContestantForm setChampions={setChampions} />
             </Route>   
-        {/* <Route path="/"> 
+             <Route exact path="/wordsanddefinitions"> 
                <Dictionary />
-             </Route>    */}
+             </Route>   
          </Switch>
     </div>
   );

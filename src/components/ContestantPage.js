@@ -1,21 +1,17 @@
 import React from "react";
 import ContestantCard from "./ContestantCard";
-import NewContestantForm from "./NewContestantForm";
 
 
 function ContestantPage( {champions, setChampions} ) {
   console.log(champions)
 
-
   const renderContestants = champions.map((champion) => (
   <ContestantCard key={champion.id} champion={champion}/>
-
 ));
 
 
   return (
     <main>
-      <NewContestantForm setChampions={setChampions} />
       <ul className="cards">
        {renderContestants}
       </ul>
