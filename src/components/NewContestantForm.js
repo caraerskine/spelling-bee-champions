@@ -26,7 +26,7 @@ function handleChange(e) {
 
    function handleSubmit(e) {
     e.preventDefault();
-    fetch("/newcontestantform", {
+    fetch("http://localhost:3004/champions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
