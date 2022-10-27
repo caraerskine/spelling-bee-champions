@@ -1,18 +1,15 @@
 import React from "react";
-// import FlipCard from "./FlipCard";
 
 
-
-function Dictionary() { 
-
+function Dictionary( {champion} ) { 
+    console.log(champion)
+  return (
+    <ul>
+        <li>{champion.word}</li>
+        <li>{champion.definition}</li>
+    </ul>
+  );
 }
-
-
-
-
-
-
 
 export default Dictionary;
 
-//is words and defninitiosn

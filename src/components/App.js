@@ -13,7 +13,7 @@ function App() {
   const [champions, setChampions] = useState ([]);
 
 useEffect(() => {
-  fetch("http://localhost:3004/champions")
+  fetch("http://localhost:3004/champions/")
     .then((r) => r.json())
     .then(data => setChampions(data));
 }, []);
@@ -23,7 +23,7 @@ useEffect(() => {
       <Header /> 
         <NavBar />
           <Switch >
-          <Route exact path="/"> 
+             <Route exact path="/"> 
                <Home />
              </Route> 
              <Route exact path="/championspage"> 
@@ -32,9 +32,9 @@ useEffect(() => {
              <Route exact path="/newcontestantform"> 
                <NewContestantForm setChampions={setChampions} />
             </Route>   
-             <Route exact path="/wordsanddefinitions"> 
+             {/* <Route exact path="/wordsanddefinitions"> 
                <Dictionary />
-             </Route>   
+             </Route>    */}
          </Switch>
     </div>
   );

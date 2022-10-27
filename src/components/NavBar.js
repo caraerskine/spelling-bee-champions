@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const linkStyles = {
   display: "inline-block",
-  width: "100px",
+  width: "240px",
   padding: "12px",
   margin: "0 8px 8px",
   background: "black",
@@ -34,7 +34,7 @@ function NavBar() {
             exact
             style={linkStyles}
             activeStyle={{ background: "black", }}>
-            Winning words and definitions
+            All winning words and definitions
          </NavLink>
          <NavLink 
             to="/championspage"

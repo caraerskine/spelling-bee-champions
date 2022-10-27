@@ -11,5 +11,3 @@ function Header() {
 
 export default Header;
 
-//exampls from PLantsy
-//<span className="logo">🌱</span>
