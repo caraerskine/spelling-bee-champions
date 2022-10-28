@@ -8,7 +8,6 @@ body {
   padding: 0 4px;
 }
 
-
 /* for list of words and definitions bee gif*/ 
 
 ul {
@@ -132,9 +131,6 @@ p.a {
   text-transform: uppercase;
 }
 
-
-
-
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -232,27 +228,6 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
-/* with writing-mode */
-/* h1 {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  color: #852c98;
-  margin: 0.15em 0.75em 0 0;
-  font-family: 'Helvetica';
-  -webkit-writing-mode: vertical-lr;
-  -ms-writing-mode: tb-lr;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  -webkit-font-feature-settings: "vkrn", "vpal";
-  font-feature-settings: "vkrn", "vpal";
-} */
-
-/* .image {
-  display: block;
-  width: 100%;
-  height: auto;
-} */
 
 .right {
   position: absolute;
