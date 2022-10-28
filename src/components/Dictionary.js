@@ -1,13 +1,10 @@
 import React from "react";
-
+import Words from "./Words";
 
 function Dictionary( {champions} ) { 
 
     const renderContestants = champions.map((champion) => (
-     <>
-        <p className="b">{champion.word}</p>
-        <p className="c">{champion.definition}</p> 
-      </>
+      <Words champion={champion} key={champion.id}/>
     ))
 
     return (
