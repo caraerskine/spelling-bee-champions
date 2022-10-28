@@ -1,25 +1,28 @@
 
 Description of App 
 
- BEESPN is an app that displays a collection of the Scripps Spelling Bee champions over the past 100 years. I love spelling and I love sports so I thought "BEESPN" was a fun concept. It is a play on the sports website ESPN and I added a bee icon in front of it to denote a spelling bee, thus "BEESPN". Welcome to the wide world of spelling! We are the champions! *cue ESPN theme music*
+BEESPN is an app that displays a collection of the Scripps Spelling Bee champions over the past 100 years. I love spelling and I love sports so I thought "BEESPN" was a fun concept. It is a word play on the sports network "ESPN" and I added a bee icon in front of it to denote a spelling bee, thus "BEESPN". Welcome to the wide world of spelling! We are the champions! *cue ESPN theme music*
  
- For any history nerds out there, I did mix and match some of the contestants' first and last names to make amalgamated contestants. I plucked the years, added my own hometowns based on all the places I lived as a kid, and just picked winning words I liked from all the winning words. Pictures are not of actual winners, so this is just a funny mash-up of winners, but it is based on actual Scripps Spelling bee data that I compiled in my own db.json file.
+For any history nerds out there, I did mix and match some of the contestants' first and last names to make amalgamated contestants. I plucked the years, added my own hometowns based on all the places I lived as a kid, and just picked winning words I liked from all the winning words. Pictures are not of actual winners, so this is just a funny mash-up of winners, but it is based on actual Scripps Spelling bee data that I compiled in my own db.json file.
 
 Goals:
-    GET request
-    -Display data of spelling bee constestants 
+GET request
+-Display data of spelling bee constestants 
 
-    Click event/user interaction
-    -Allow users to click the contestant's button to display more information (click event)
+Click event/user interaction
+-Allow users to click the contestant's button to display more information (click event)
 
-    POST request
-    -Allow users to enter in other spelling bee winners via a submittable form 
+POST request
+-Allow users to enter in other spelling bee winners via a submittable form 
 
-    Client-side routing 
-    -Use 3 or more routes to allow user to navigate to a specific path in the URL
+Client-side routing 
+-Use 3 or more routes to allow user to navigate to a specific path in the URL
 
-    Components
-    -Have at least 5 components
+Components
+-Have at least 5 components
+
+CSS styling
+-Incorporate more styling 
 
 URL of repo
 https://github.com/caraerskine/spelling-bee-champions
