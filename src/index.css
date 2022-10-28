@@ -9,6 +9,86 @@ body {
 }
 
 
+/* for list of words and definitions bee gif*/ 
+
+ul {
+  list-style: none;
+}
+ul li::before {
+  content: "";
+  background-image: url(https://media4.giphy.com/media/Su12DRycqCCOjwHJkE/200w.gif?cid=82a1493bysa5xtbtexnuyjj1ecthq4ot0n38qtewiuvhcbgc&rid=200w.gif&ct=g);
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.1rem;
+  margin-right: 0.2rem;
+  margin: 5px;
+}
+
+/*main header*/
+h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 6.5vw;
+  font-weight: 900;
+  line-height: 6vw;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 5.5vw;
+  font-weight: 450;
+  line-height: 4vw;
+  text-transform: uppercase;
+}
+
+p {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.45vw;
+  font-weight: 50;
+  line-height: 1vw;
+  text-transform: uppercase;
+}
+
+p.a {
+  color: #fff;
+  text-align: left;
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.25vw;
+  font-weight: 50;
+  line-height: 1.5vw;
+  text-transform: uppercase;
+}
+
+p.b {
+  color: #000000;
+  text-align: left;
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.25vw;
+  font-weight: 50;
+  line-height: 1.5vw;
+  text-transform: uppercase;
+}
+
+p.c {
+  color: #8A2BE2;
+  text-align: left;
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.25vw;
+  font-weight: 50;
+  line-height: 1.5vw;
+  text-transform: uppercase;
+}
+
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -53,22 +133,7 @@ body {
   width: 100%;
   } 
   
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  /* @media screen and (max-width: 800px) {
-  .column {
-  flex: 50%;
-  max-width: 50%;
-  }
-  } */
-   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  /* @media screen and (max-width: 600px) {
-  .column {
-  flex: 100%;
-  max-width: 100%;
-  }
-  } */
-
+  
 /* this is from personal website ph1 */
 body {
   background: pink;

@@ -5,8 +5,8 @@ function Dictionary( {champions} ) {
 
     const renderContestants = champions.map((champion) => (
        <ul>
-        <li><strong>{champion.word}</strong></li>
-        <li>{champion.definition}</li> 
+        <p class="b">{champion.word}</p>
+        <p class="c">{champion.definition}</p> 
       </ul>
     ))
 

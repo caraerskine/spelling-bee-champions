@@ -23,10 +23,10 @@ const showWord = (
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={champion.image} />
                  <Card.Body>
-                     <Card.Title><strong><h2>{champion.name}</h2></strong></Card.Title>
+                     <Card.Title><h2>{champion.name}</h2></Card.Title>
                          <Card.Text>
-                            <li>Championship: {champion.year}</li>
-                            <li>Hometown: {champion.location}</li>
+                            <p class="a">Championship: {champion.year}</p>
+                            <p class="a">Hometown: {champion.location}</p>
                         </Card.Text>
                         <div>
                          {!isOn ? (
@@ -38,7 +38,7 @@ const showWord = (
                         </div>
                     </Card.Body>
              </Card>     
-              <h3></h3>   
+             <p></p> 
     </div>
    );
 }      
