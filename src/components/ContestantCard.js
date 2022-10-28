@@ -25,8 +25,8 @@ const showWord = (
                  <Card.Body>
                      <Card.Title><h2>{champion.name}</h2></Card.Title>
                          <Card.Text>
-                            <p class="a">Championship: {champion.year}</p>
-                            <p class="a">Hometown: {champion.location}</p>
+                            <p className="a">Championship: {champion.year}</p>
+                            <p className="a">Hometown: {champion.location}</p>
                         </Card.Text>
                         <div>
                          {!isOn ? (

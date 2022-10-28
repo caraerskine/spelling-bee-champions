@@ -88,7 +88,7 @@ p {
   text-transform: uppercase;
 }
 
-a {
+p.d {
   color: #fff;
   text-align: center;
   font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -98,26 +98,26 @@ a {
   text-transform: uppercase;
 }
 
-a:link {
+p.d:link {
   color: yellow;
 }
 
 /* visited link */
-a:visited {
+p.d:visited {
   color: pink;
 }
 
 /* mouse over link */
-a:hover {
+p.d:hover {
   background-color: magenta;
 }
 
 /* selected link */
-a:active {
+p.d:active {
   color: yellow;
 } 
 
-a:link {
+p.d:link {
   text-decoration: none;  
 }
 

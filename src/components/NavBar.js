@@ -20,28 +20,28 @@ function NavBar() {
             exact
             style={linkStyles}
             activeStyle={{ background: "black", }}>
-            <a>Home Page</a>
+            <p className="d">Home Page</p>
          </NavLink>
          <NavLink 
             to="/championspage"
             exact
             style={linkStyles}
             activeStyle={{ background: "black", }}>
-            <a>Champions Page</a>
+            <p className="d">Champions Page</p>
          </NavLink>
          <NavLink 
             to="/newcontestantform"
             exact
             style={linkStyles}
             activeStyle={{ background: "black", }}>
-            <a>Add New Champion</a>
+            <p className="d">Add New Champion</p>
          </NavLink>
          <NavLink 
             to="/wordsanddefinitions"
             exact
             style={linkStyles}
             activeStyle={{ background: "black", }}>
-            <a>All winning words</a>
+            <p className="d">All winning words</p>
          </NavLink>
       </div>
     </header>
