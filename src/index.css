@@ -44,7 +44,7 @@ p.b {
   font-size: 1.25vw;
   font-weight: 50;
   line-height: 1.5vw;
-  text-transform: uppercase;
+  text-transform: strong;
 }
 
 p.c {
@@ -54,7 +54,7 @@ p.c {
   font-size: 1.25vw;
   font-weight: 50;
   line-height: 1.5vw;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 /*main header*/
