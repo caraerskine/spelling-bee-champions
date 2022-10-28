@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
@@ -25,20 +25,19 @@ const showWord = (
                  <Card.Body>
                      <Card.Title><h2>{champion.name}</h2></Card.Title>
                          <Card.Text>
-                            <p className="a">Championship: {champion.year}</p>
-                            <p className="a">Hometown: {champion.location}</p>
-                        </Card.Text>
-                        <div>
-                         {!isOn ? (
-                            true
-                         ) : (
-                            showWord
-                        )}
-                          <Button onClick={handleClick} variant="primary">See {champion.name}'s winning word!</Button>
+                            <><p className="a">Championship: {champion.year}</p></>
+                            <><p className="a">Hometown: {champion.location}</p></>
+                         </Card.Text>
+                           <div>
+                            {!isOn ? (
+                               true
+                              ) : (
+                             showWord
+                            )}
+                            <Button onClick={handleClick} variant="primary">See {champion.name}'s winning word!</Button>
                         </div>
-                    </Card.Body>
-             </Card>     
-             <p></p> 
+                </Card.Body>
+        </Card>   
     </div>
    );
 }      
