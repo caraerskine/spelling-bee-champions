@@ -27,6 +27,36 @@ ul li::before {
   margin: 5px;
 }
 
+p.b {
+  color: #000000;
+  text-align: left;
+  content: "";
+  background-image: url(https://media4.giphy.com/media/Su12DRycqCCOjwHJkE/200w.gif?cid=82a1493bysa5xtbtexnuyjj1ecthq4ot0n38qtewiuvhcbgc&rid=200w.gif&ct=g);
+  background-size: contain;
+  display: inline-block;
+  /* width: 1em; */
+  height: 1em;
+  position: relative;
+  /* top: 0.1rem; */
+  /* margin-right: 0.2rem; */
+  /* margin: 5px; */
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.25vw;
+  font-weight: 50;
+  line-height: 1.5vw;
+  text-transform: uppercase;
+}
+
+p.c {
+  color: #8A2BE2;
+  text-align: left;
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.25vw;
+  font-weight: 50;
+  line-height: 1.5vw;
+  text-transform: uppercase;
+}
+
 /*main header*/
 h1 {
   color: #fff;
@@ -58,8 +88,42 @@ p {
   text-transform: uppercase;
 }
 
-p.a {
+a {
   color: #fff;
+  text-align: center;
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.45vw;
+  font-weight: 50;
+  line-height: 1vw;
+  text-transform: uppercase;
+}
+
+a:link {
+  color: yellow;
+}
+
+/* visited link */
+a:visited {
+  color: pink;
+}
+
+/* mouse over link */
+a:hover {
+  background-color: magenta;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+} 
+
+a:link {
+  text-decoration: none;  
+}
+
+
+p.a {
+  color: #696969;
   text-align: left;
   font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.25vw;
@@ -68,25 +132,7 @@ p.a {
   text-transform: uppercase;
 }
 
-p.b {
-  color: #000000;
-  text-align: left;
-  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1.25vw;
-  font-weight: 50;
-  line-height: 1.5vw;
-  text-transform: uppercase;
-}
 
-p.c {
-  color: #8A2BE2;
-  text-align: left;
-  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1.25vw;
-  font-weight: 50;
-  line-height: 1.5vw;
-  text-transform: uppercase;
-}
 
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -224,29 +270,6 @@ body {
   align-items:right;
   justify-content:right;
   transform: rotate(90deg);
-}
-/* unvisited link */
-a:link {
-  color: yellow;
-}
-
-/* visited link */
-a:visited {
-  color: pink;
-}
-
-/* mouse over link */
-a:hover {
-  background-color: magenta;
-}
-
-/* selected link */
-a:active {
-  color: yellow;
-} 
-
-a:link {
-  text-decoration: none;  
 }
 
 
