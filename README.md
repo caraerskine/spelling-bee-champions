@@ -6,8 +6,8 @@ Description of App
  For any history nerds out there, I did mix and match some of the contestants' first and last names to make amalgamated contestants. I plucked the years, added my own hometowns based on all the places I lived as a kid, and just picked winning words I liked from all the winning words. Pictures are not of actual winners, so this is just a funny mash-up of winners, but it is based on actual Scripps Spelling bee data that I compiled in my own db.json file.
 
 Goals:
-    GET request
-    -Display data of spelling bee constestants 
+GET request
+-Display data of spelling bee constestants 
 
     Click event/user interaction
     -Allow users to click the contestant's button to display more information (click event)
