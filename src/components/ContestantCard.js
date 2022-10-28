@@ -16,7 +16,7 @@ const showWord = (
         <li>Winning word: <strong>{champion.word}</strong></li>  
         <p></p>
     </>
-)
+);
 
     return (
     <div>
@@ -24,16 +24,10 @@ const showWord = (
             <Card.Img variant="top" src={champion.image} />
                  <Card.Body>
                      <Card.Title><h2>{champion.name}</h2></Card.Title>
-                         <Card.Text>
-                            <><p className="a">Championship: {champion.year}</p></>
-                            <><p className="a">Hometown: {champion.location}</p></>
-                         </Card.Text>
-                           <div>
-                            {!isOn ? (
-                               true
-                              ) : (
-                             showWord
-                            )}
+                         <Card.Text>Championship: {champion.year}</Card.Text>
+                            <Card.Text>Hometown: {champion.location}</Card.Text>
+                        <div>
+                            {!isOn && showWord}
                             <Button onClick={handleClick} variant="primary">See {champion.name}'s winning word!</Button>
                         </div>
                 </Card.Body>
