@@ -27,7 +27,7 @@ const showWord = (
                          <Card.Text>Championship: {champion.year}</Card.Text>
                             <Card.Text>Hometown: {champion.location}</Card.Text>
                         <div>
-                            {!isOn && showWord}
+                            {isOn && showWord}
                             <Button onClick={handleClick} variant="primary">See {champion.name}'s winning word!</Button>
                         </div>
                 </Card.Body>
