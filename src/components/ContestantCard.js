@@ -29,6 +29,7 @@ const showWord = (
                         <div>
                             {isOn && showWord}
                             <Button onClick={handleClick} variant="primary">See {champion.name}'s winning word!</Button>
+                            <Card.Text></Card.Text>
                         </div>
                 </Card.Body>
         </Card>   
