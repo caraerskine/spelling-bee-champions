@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const baseValue = {
   name: "",
   image: "",
@@ -14,6 +15,8 @@ function NewContestantForm( {setChampions}) {
 
   console.log(newContestant)
 
+
+
 function handleChange(e) {
   setNewContestant((currentNewContestant) => {
 
@@ -23,6 +26,7 @@ function handleChange(e) {
     }
   })
 }
+
 
    function handleSubmit(e) {
     e.preventDefault();
