@@ -11,6 +11,10 @@ const linkStyles = {
   color: "white",
 };
 
+//is this the programmatic navigation?
+//<NavLink> is a special version of the <Link> that will add styling attributes to the rendered element 
+//when it matches the current URL.
+
 function NavBar() {
   return (
     <header>
@@ -24,7 +28,7 @@ function NavBar() {
          </NavLink>
          <NavLink 
             to="/championspage"
-            exact
+            exact 
             style={linkStyles}
             activeStyle={{ background: "black", }}>
             <p className="d">Champions Page</p>
