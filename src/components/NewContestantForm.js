@@ -18,7 +18,7 @@ import React, { useState } from "react";
 //i am referring to line 18
 //when the form state is updated, the entire state gets rewritten
 
-const initialState = {
+const emptyForm = {
   name: "",
   image: "",
   year: "",
@@ -27,13 +27,23 @@ const initialState = {
   definition: ""
 }
 
-function NewContestantForm( {setChampions} ) {
-  const [newContestant, setNewContestant] = useState(initialState);
+function NewContestantForm( {handleAddNewContestant} ) {
+  const [formData, setFormData] = useState(emptyForm);
 
-  console.log(newContestant)
+  console.log(formData)
+
+//newContestant = formData
+//setNewContestant = setFormData
+//initialState = emptyForm
+//currentNewContestant = formData
+
+//a setter function only does something when a new argument (new obj or variable or an array) is passed into it
+//if not, initial state value will be shown
+//checks to see if setNewContestant had been run, and can update the value
+//of newContestant, and the compoenent gets re-rendered
 
 //upon rendering the page, useState sets the initial value of the form that I want filled out
-//and sets it according to what base value
+//and sets it according to the key value pairs in the initialState object
 //newContestant is a variable
 //when it gets filled in with the value, that value becomes newContestant
 
@@ -61,18 +71,23 @@ function NewContestantForm( {setChampions} ) {
 //line 68 fill in name and value, what user is putting in
 //
 
-function handleChange(e) {
-  setNewContestant((currentNewContestant) => {
 
-    return {
-       ...currentNewContestant,
-       [e.target.name]: e.target.value
-    }
-  })
 
-  console.log(newContestant.name)
+const handleChange = (event) => {
+
+  const {name, value} = event.target;
+
+  setFormData((formData) => ({
+
+       ...formData,
+       [name]: value
+  }))
+
+  console.log(formData.name)
   //when this line runs the state has not finished updating
-  //
+  //chaning form data due to targeted events
+  //line 80 the setter function setFormData is taking in an argument of formData(current value of the state of formData) and it is returning the spread out version (using spread operator  makes a shallow copy and then adds the key values, e.target.name, etc., returns the value without mutating the original array) of formData and the changed values from the user's input get added 
+
 }
 
 //passing set champions to add contesant form
@@ -85,27 +100,29 @@ function handleChange(e) {
 //turned into JSON
 //then on the second .then 
 
-   function handleSubmit(e) {
-    e.preventDefault();
+   const handleSubmit = (event) => {
+    event.preventDefault();
     fetch("http://localhost:3004/champions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify(newContestant)
-    }) .then(r => r.json())
-       .then (data => handleAddNewContestant(data));
+    body: JSON.stringify({...formData})
+    }) .then(response => response.json())
+       .then(data => onAddContestant(data))
+       .then(() => setFormData(emptyForm));
 }
 
+//stringify makes it one string in a box not little boxes 
+//line 110 spread operator, it is changing the shallow copy not the initial formData
+//.then response is that the data has been received
+//the second .then 
 //reset form 
 //reset the new contestant 
 //use spread operator to add data 
 // on line 91 that is what is setting it to empty after I submit, clears it out to default state  
 
-   function handleAddNewContestant(data) {
-     setNewContestant(initialState) 
-     setChampions((currentContestants) => [...currentContestants, data])      
-}
+
 
 
 //just updating a variable does not cause a re-render
@@ -133,14 +150,14 @@ function handleChange(e) {
           <input 
           type="text" 
           name="name" 
-          value={newContestant.name} 
+          value={formData.name} 
           placeholder="Contestant name" 
           onChange={handleChange}
           />
           <input 
           type="text" 
           name="image" 
-          value={newContestant.image} 
+          value={formData.image} 
           placeholder="Image URL" 
           onChange={handleChange}
           />
@@ -150,28 +167,28 @@ function handleChange(e) {
           max="2099"
           step="1" 
           name="year"  
-          value={newContestant.year} 
+          value={formData.year} 
           placeholder="Year" 
           onChange={handleChange}
           />
           <input 
           type="text" 
           name="location" 
-          value={newContestant.location} 
+          value={formData.location} 
           placeholder="Hometown" 
           onChange={handleChange}
           />
           <input 
           type="text" 
           name="word" 
-          value={newContestant.word} 
+          value={formData.word} 
           placeholder="Winning word" 
           onChange={handleChange}
           />
           <input 
           type="text" 
           name="definition" 
-          value={newContestant.definition} 
+          value={formData.definition} 
           placeholder="Definition of winning word" 
           onChange={handleChange}
           />

@@ -28,16 +28,30 @@ function App() {
 
 //setting state at top level
 ///QUESTION why do i have an empty array above
+//state allows your objects to
+//initialized state could be empty (bag), and then it gets touched (bananas in bag)
+//set it to an empty array because I am dealing with an array of objects
 //champions is the current state and setChampions is the setter function that updates state, the argument as empty array is IDK
 //setChampions is async
 
+const API = "http://localhost:3004/champions/"
+
 useEffect(() => {
-  fetch("http://localhost:3004/champions/")
-    .then((r) => r.json())
+  fetch(API)
+    .then((response) => response.json())
     .then(data => setChampions(data));
 }, []);
 
-//useEffect lets me perform side effects outside of my React component
+const handleAddNewContestant = (data) => {
+  setChampions((champions) => [...champions, data])      
+}
+
+//useEffect is watching for the changes and will only run once on the initial render
+//on 41 the value of response is the response you get form the API call once the fetch promise has been resolved. 
+//wait until the promise from the API has been resolved then run this function, once it has been parsed once you get the data and it is organized set it to setChampions and then it is available to your react app
+
+//.then returns a promise
+//.then is async  
 //Data fetching and manually changing the DOM in React components are all examples of side effects. 
 //useEffect happens after the inital render, it runs after the component is mounted
 //This get request uses the URL endpoint, we want to make this request once our component has mounted, thus useEffect.
@@ -53,13 +67,13 @@ useEffect(() => {
 
 //three instances:
 //useEffect(() => {}): No dependencies array
-//Run the side effect every time our component renders (whenever state or props change)
+//Run the side effect every time our component renders (whenever state or props change) it is going to happen every single time React goes through a re-render cycle
 
 //useEffect(() => {}, []): Empty dependencies array
-//Run the side effect only the first time after our component mounts  
+//Run the side effect only the first time after our component mounts. This means that React will run it once and then stop looking for it.
 
 //useEffect(() => {}, [variable1, variable2]): Dependencies array with elements in it
-//Run the side effect any time the variable(s) change AND after the initial render 
+//Run the side effect any time the variable1 or 2's change AND after the initial render 
 
 //BONUS can return a clean-up function that would run before the useEffect callback and before the 
 //component unmounts
@@ -100,7 +114,7 @@ useEffect(() => {
                <ContestantPage champions={champions} />
              </Route>   
              <Route exact path="/newcontestantform"> 
-               <NewContestantForm setChampions={setChampions} />
+               <NewContestantForm setChampions={setChampions} onAddContestant={handleAddNewContestant} />
             </Route>   
              <Route exact path="/wordsanddefinitions"> 
                <Dictionary champions={champions}/>
