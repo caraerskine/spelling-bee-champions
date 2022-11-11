@@ -84,16 +84,17 @@ const handleChange = (event) => {
   }))
 
   console.log(formData.name)
-  //when this line runs the state has not finished updating
-  //chaning form data due to targeted events
-  //line 80 the setter function setFormData is taking in an argument of formData(current value of the state of formData) and it is returning the spread out version (using spread operator  makes a shallow copy and then adds the key values, e.target.name, etc., returns the value without mutating the original array) of formData and the changed values from the user's input get added 
 
 }
+
+//when this line runs the state has not finished updating
+  //chaning form data due to targeted events
+  //line 80 the setter function setFormData is taking in an argument of formData(current value of the state of formData) and it is returning the spread out version (using spread operator  makes a shallow copy and then adds the key values, e.target.name, etc., returns the value without mutating the original array) of formData and the changed values from the user's input get added 
 
 //passing set champions to add contesant form
 //when i add it i am setting champions
 
-//clicks the submit button when everyhitng the added to the fllds get ssubmitted
+//clicks the submit button when everyhitng the added to the fllds get submitted
 
 //line 91 body: newContestant in my initial state passed into the JSON
 //stringify turns it into json on the back end so it can be received in proper format
@@ -122,15 +123,11 @@ const handleChange = (event) => {
 //use spread operator to add data 
 // on line 91 that is what is setting it to empty after I submit, clears it out to default state  
 
-
-
-
 //just updating a variable does not cause a re-render
 //you would need state or props
 //re-renders are triggered by updated state
 
 //git checkout main
-
 
 //Below is my form with several controlled inputs. The input is controlled because it I set its value via a prop.
  // see Line 125 value={newContestant.name}
