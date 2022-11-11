@@ -27,7 +27,7 @@ const emptyForm = {
   definition: ""
 }
 
-function NewContestantForm( {handleAddNewContestant} ) {
+function NewContestantForm( {onAddContestant} ) {
   const [formData, setFormData] = useState(emptyForm);
 
   console.log(formData)
@@ -70,8 +70,6 @@ function NewContestantForm( {handleAddNewContestant} ) {
 //return on line 66 the rest of the base value variables (currentNewContestant)
 //line 68 fill in name and value, what user is putting in
 //
-
-
 
 const handleChange = (event) => {
 
