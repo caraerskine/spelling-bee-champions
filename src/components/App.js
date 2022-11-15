@@ -12,11 +12,18 @@ function App() {
 
   const [champions, setChampions] = useState ([]);
 
+  const API = "http://localhost:3004/champions/"
+
 useEffect(() => {
-  fetch("http://localhost:3004/champions/")
-    .then((r) => r.json())
+  fetch(API)
+    .then((response) => response.json())
     .then(data => setChampions(data));
 }, []);
+
+
+const handleAddNewContestant = (data) => {
+  setChampions((champions) => [...champions, data])      
+}
 
   return (
     <div className="App">
@@ -30,7 +37,7 @@ useEffect(() => {
                <ContestantPage champions={champions} />
              </Route>   
              <Route exact path="/newcontestantform"> 
-               <NewContestantForm setChampions={setChampions} />
+               <NewContestantForm setChampions={setChampions} onAddNewContestant={handleAddNewContestant} />
             </Route>   
              <Route exact path="/wordsanddefinitions"> 
                <Dictionary champions={champions}/>

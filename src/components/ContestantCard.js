@@ -8,7 +8,7 @@ function ContestantCard( {champion} ) {
 
    
    function handleClick() {
-    setIsOn(isOn => !isOn)
+    setIsOn(prevIsOn => !prevIsOn)
    }
 
 const showWord = (

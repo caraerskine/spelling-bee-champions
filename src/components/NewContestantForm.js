@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-const baseValue = {
+const emptyForm = {
   name: "",
   image: "",
   year: "",
@@ -10,42 +10,36 @@ const baseValue = {
   definition: ""
 }
 
-function NewContestantForm( {setChampions}) {
-  const [newContestant, setNewContestant] = useState(baseValue);
-
-  console.log(newContestant)
-
+function NewContestantForm( {onAddNewContestant}) {
+  const [formData, setFormData] = useState(emptyForm);
+  console.log(formData)
 
 
-function handleChange(e) {
-  setNewContestant((currentNewContestant) => {
+const handleChange = (event) => {
 
-    return {
-       ...currentNewContestant,
-       [e.target.name]: e.target.value
-    }
-  })
+   const {name, value} = event.target;
+
+  setFormData((formData) => ({
+       ...formData,
+       [name]: value
+    }))
+
+    console.log(formData.name)
+ 
 }
 
-
-   function handleSubmit(e) {
-    e.preventDefault();
+   const handleSubmit = (event) => {
+    event.preventDefault();
     fetch("http://localhost:3004/champions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify(newContestant)
-    }) .then(r => r.json())
-       .then (data => handleAddNewContestant(data));
+    body: JSON.stringify({...formData})
+    }) .then(response => response.json())
+       .then(data => onAddNewContestant(data))
+       .then(() => setFormData(emptyForm));
 }
- 
-
-   function handleAddNewContestant(data) {
-     setNewContestant(baseValue) 
-     setChampions((currentContestants) => [...currentContestants, data])      
-}
-
 
     return (
       <div className="new-contestant-form">
@@ -54,14 +48,14 @@ function handleChange(e) {
           <input 
           type="text" 
           name="name" 
-          value={newContestant.name} 
+          value={formData.name} 
           placeholder="Contestant name" 
           onChange={handleChange}
           />
           <input 
           type="text" 
           name="image" 
-          value={newContestant.image} 
+          value={formData.image} 
           placeholder="Image URL" 
           onChange={handleChange}
           />
@@ -71,28 +65,28 @@ function handleChange(e) {
           max="2099"
           step="1" 
           name="year"  
-          value={newContestant.year} 
+          value={formData.year} 
           placeholder="Year" 
           onChange={handleChange}
           />
           <input 
           type="text" 
           name="location" 
-          value={newContestant.location} 
+          value={formData.location} 
           placeholder="Hometown" 
           onChange={handleChange}
           />
           <input 
           type="text" 
           name="word" 
-          value={newContestant.word} 
+          value={formData.word} 
           placeholder="Winning word" 
           onChange={handleChange}
           />
           <input 
           type="text" 
           name="definition" 
-          value={newContestant.definition} 
+          value={formData.definition} 
           placeholder="Definition of winning word" 
           onChange={handleChange}
           />
