@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
 function Timer() {
-  const [counter, setCounter] = useState(0);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCounter((prevCounter) => prevCounter + 1);
+      setCount((prevCounter) => prevCounter + 1);
     }, 1000);
 
     //returning an anonymous arrow function
@@ -14,7 +14,7 @@ function Timer() {
 
   return (
     <div className="App">
-      <h1>Timer: {counter}</h1>
+      <h1>Timer: {count}</h1>
     </div>
   );
 }

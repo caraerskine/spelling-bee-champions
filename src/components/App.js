@@ -27,8 +27,8 @@ function App() {
   const [champions, setChampions] = useState ([]); 
 
 //setting state at top level
-///QUESTION why do i have an empty array above
-//state allows your objects to
+///initialize state and set it to an empty array because that is what we are starting with, and I am going to populate that array 
+//with the data i fetch from the back end using useEffect and fetching that data
 //initialized state could be empty (bag), and then it gets touched (bananas in bag)
 //set it to an empty array because I am dealing with an array of objects
 //champions is the current state and setChampions is the setter function that updates state, the argument as empty array is IDK
@@ -47,8 +47,9 @@ const handleAddNewContestant = (data) => {
 }
 
 //useEffect is watching for the changes and will only run once on the initial render
-//on 41 the value of response is the response you get form the API call once the fetch promise has been resolved. 
-//wait until the promise from the API has been resolved then run this function, once it has been parsed once you get the data and it is organized set it to setChampions and then it is available to your react app
+//on 41 the value of response is the response you get from the API call once the fetch promise has been resolved. 
+//wait until the promise from the API has been resolved then run this function, once it has been parsed once you 
+//get the data and it is organized, set it to setChampions and then it is available to your react app
 
 //.then returns a promise
 //.then is async  

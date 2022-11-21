@@ -39,10 +39,10 @@ const showWord = (
 }      
     export default ContestantCard;
 
-    //state udates and compoenent is re-rendered 
+    //state udates and component is re-rendered 
     //line 29 logical statement with And operator returns the right side of the statement 
     //a click triggers handleclick function, changes state to opposite of where it is
-    //false is default, so when it is is clciked it becomes true and it gts displayed 
+    //false is default, so when it is clciked it becomes true and it gts displayed 
     //line 29 is passing in a prop, isOn and showWord are props that is affecting what is being displayed 
     //not handling any logic handling the display
     //jsx returns elements

@@ -39,13 +39,12 @@ function NewContestantForm( {onAddContestant} ) {
 
 //a setter function only does something when a new argument (new obj or variable or an array) is passed into it
 //if not, initial state value will be shown
-//checks to see if setNewContestant had been run, and can update the value
-//of newContestant, and the compoenent gets re-rendered
+//checks to see if setFormData had been run, and can update the value of formData, and the compoenent gets re-rendered
 
 //upon rendering the page, useState sets the initial value of the form that I want filled out
-//and sets it according to the key value pairs in the initialState object
-//newContestant is a variable
-//when it gets filled in with the value, that value becomes newContestant
+//and sets it according to the key value pairs in the emptyForm object
+//formData is a variable
+//when it gets filled in with the value, that value becomes formData
 
 //with a static variable there is no re-render
 //state holds its value between the renders which is why we use state in forms
@@ -60,14 +59,14 @@ function NewContestantForm( {onAddContestant} ) {
 
 //handlechange is how we get controlled form, updates state to reflect what get put into the fields as user enters info
 //handle change happens when the event happens and the event is someone typing in
-//setNewContestant setter fn is a callback fn 
-//take copy of of currentNC
+//setFormData setter fn is a callback fn 
+//take copy of of formData
 //target name rpesents the field and the target value reps what they put it the form field
-//the callback fn is passed into setNewContestant as an argument (currentNewContestant)
+//the callback fn is passed into setFormData as an argument (formData)
 
 //the setter function allows the progrmamer to cpature data and store it in a varibale 
 //calling it on line 62
-//return on line 66 the rest of the base value variables (currentNewContestant)
+//return on line 66 the rest of the base value variables (formData)
 //line 68 fill in name and value, what user is putting in
 //
 
