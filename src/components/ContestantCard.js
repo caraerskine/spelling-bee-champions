@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function ContestantCard( {champion} ) {
+function ContestantCard( {champion, onRetiredChampions} ) {
 
     const [isOn, setIsOn] = useState(false)
 
    
    function handleClick() {
-    setIsOn(prevIsOn => !prevIsOn)
+    onRetiredChampions(prevIsOn => !prevIsOn)
    }
 
 const showWord = (
@@ -37,3 +37,5 @@ const showWord = (
    );
 }      
     export default ContestantCard;
+
+

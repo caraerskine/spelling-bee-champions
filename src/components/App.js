@@ -8,22 +8,44 @@ import Dictionary from "./Dictionary";
 import Home from "./Home";
 
 
+
 function App() {
 
-  const [champions, setChampions] = useState ([]);
+  const [champions, setChampions] = useState([]);
+  const [retiredChampions, setRetiredChampions] = useState(false);
 
   const API = "http://localhost:3004/champions/"
 
 useEffect(() => {
   fetch(API)
     .then((response) => response.json())
-    .then(data => setChampions(data));
-}, []);
+    .then(data => {
+      const updatedChampions = champions.map((data) => {
+        return {
+          ...champions, retired: false
+        }
+      })
+      setChampions(updatedChampions);
+  })
+}, []); 
 
+const onRetiredChampions = (retiredChampions) => {
+  const updatedChampionsClick = champions.map((champion) => 
+  champion.id === retiredChampions.id ? retiredChampions : champions)
+  setChampions(updatedChampionsClick)
+}
+
+const handleRetiredChampions = () => {
+  setRetiredChampions((retired) => !retired) 
+}
+  
 
 const handleAddNewContestant = (data) => {
-  setChampions((champions) => [...champions, data])      
+  setChampions((champions) => [...champions, data])
+
 }
+
+const displayChampions = champions.filter((champion) => champion.retired)
 
   return (
     <div className="App">
@@ -34,7 +56,12 @@ const handleAddNewContestant = (data) => {
                <Home />
              </Route> 
              <Route exact path="/championspage"> 
-               <ContestantPage champions={champions} />
+               <ContestantPage 
+                  champions={displayChampions} 
+                  onRetiredChampions={onRetiredChampions}
+                  onRetiredClick={handleRetiredChampions}
+                  retiredChampions={retiredChampions}
+               />
              </Route>   
              <Route exact path="/newcontestantform"> 
                <NewContestantForm setChampions={setChampions} onAddNewContestant={handleAddNewContestant} />
@@ -51,3 +78,7 @@ export default App;
 
 
 
+//Create a button that lets the user filter champions based on an attribute
+//create a variable and store the filteredChampions in it 
+//map over that variable to show the filteredChampions
+//button element has onClick that triggers filteredChampions
