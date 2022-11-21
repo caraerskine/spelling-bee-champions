@@ -10,7 +10,7 @@ const emptyForm = {
   definition: ""
 }
 
-function NewContestantForm( {onAddNewContestant}) {
+function NewContestantForm( {onAddNewContestant} ) {
   const [formData, setFormData] = useState(emptyForm);
   console.log(formData)
 
