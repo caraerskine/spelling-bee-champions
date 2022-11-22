@@ -8,30 +8,30 @@ import Dictionary from "./Dictionary";
 import Home from "./Home";
 
 
-
 function App() {
 
   const [champions, setChampions] = useState([]);
   const [retiredChampions, setRetiredChampions] = useState(false);
 
-  const API = "http://localhost:3004/champions/"
+  const API = "http://localhost:3004/champions"
 
 useEffect(() => {
   fetch(API)
     .then((response) => response.json())
-    .then(data => {
-      const updatedChampions = champions.map((data) => {
+    .then((champions) => {
+      const updatedChampions = champions.map((champions) => {
         return {
           ...champions, retired: false
         }
       })
+
       setChampions(updatedChampions);
   })
 }, []); 
 
 const onRetiredChampions = (retiredChampions) => {
-  const updatedChampionsClick = champions.map((champion) => 
-  champion.id === retiredChampions.id ? retiredChampions : champions)
+  const updatedChampionsClick = champions.map((champions) => 
+  champions.id === retiredChampions.id ? retiredChampions : champions)
   setChampions(updatedChampionsClick)
 }
 
@@ -45,7 +45,10 @@ const handleAddNewContestant = (data) => {
 
 }
 
-const displayChampions = champions.filter((champion) => champion.retired)
+let displayChampions = champions
+if (retiredChampions){
+  displayChampions = displayChampions.filter((champions) => champions.retired)
+}
 
   return (
     <div className="App">
@@ -57,7 +60,7 @@ const displayChampions = champions.filter((champion) => champion.retired)
              </Route> 
              <Route exact path="/championspage"> 
                <ContestantPage 
-                  champions={displayChampions} 
+                  champions={displayChampions}
                   onRetiredChampions={onRetiredChampions}
                   onRetiredClick={handleRetiredChampions}
                   retiredChampions={retiredChampions}
