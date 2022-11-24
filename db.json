@@ -18,7 +18,7 @@
       "location": "West Linn, Oregon",
       "word": "staphylococci",
       "definition": "A bacterium of a genus that includes many pathogenic kinds that cause pus formation, especially in the skin and mucous membranes.",
-      "retired": false
+      "retired": true
     },
     {
       "id": 3,
@@ -37,7 +37,8 @@
       "year": 1998,
       "location": "Littleton, Colorado",
       "word": "appoggiatura",
-      "definition": "In music, an ornamental note of long or short duration that temporarily displaces, and subsequently resolves into, a main note, usually by stepwise motion."
+      "definition": "In music, an ornamental note of long or short duration that temporarily displaces, and subsequently resolves into, a main note, usually by stepwise motion.",
+      "retired": true
     },
     {
       "id": 5,
@@ -46,7 +47,8 @@
       "year": 1969,
       "location": "Avondale, Pennsylvania",
       "word": "scherenschnitte",
-      "definition": "The art of cutting paper into decorative designs."
+      "definition": "The art of cutting paper into decorative designs.",
+      "retired": true
     },
     {
       "id": 6,
@@ -55,7 +57,8 @@
       "year": "1955",
       "location": "Green Harbor, Massachusetts",
       "word": "cambist",
-      "definition": "An antiquated term that refers to a financial professional who is considered an expert in the international currency exchange markets."
+      "definition": "An antiquated term that refers to a financial professional who is considered an expert in the international currency exchange markets.",
+      "retired": true
     },
     {
       "id": 7,
